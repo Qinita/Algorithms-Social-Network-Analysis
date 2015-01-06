@@ -7,8 +7,16 @@
 #
 
 def create_tour(nodes):
-    # your code here
-    return []
+    Node_1 = nodes[0]
+    Node_num = len(nodes)
+    i = 0
+    Edge = []
+    while i < Node_num - 1:
+        Edge.append((nodes[i], nodes[i+1]))
+        i = i + 1
+    Edge.append((nodes[Node_num-1], Node_1))
+    return Edge
+   
 
 #########
 
